@@ -3,15 +3,19 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .Daemr {
+  .Daemr-bg {
+    filter: blur(8px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     animation: fadein ease 5s;
-    max-width: 10%;
+    max-width: 40%;
     height: auto;
   }
 }
 
 
-.Typewriter {
+.Typewriter-title {
   width: 20ch;
   animation: typing 5s steps(20), blink .5s step-end infinite alternate;
   white-space: nowrap;
@@ -19,6 +23,31 @@
   border-right: 3px solid;
   font-family: monospace;
   font-size: 2em;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+
+.Typewriter-cs {
+  width: 25ch;
+  animation: 0s linear 6s forwards delayedShow, typing 5s steps(25), blink .5s step-end infinite alternate;
+  animation-delay: 5s;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid;
+  font-family: monospace;
+  font-size: 1em;
+  visibility: hidden;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
 }
 
 @keyframes typing {
@@ -34,15 +63,16 @@
 }
 
 .App-header {
-  background-color: gray;
+  background-color: white;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: darkslategray;
+  color: black;
 }
+
 
 
 .App-link {
@@ -53,11 +83,13 @@
   0% {
     opacity: 0;
   }
-  50% {
-    opacity: 0.6;
-  }
   100% {
-    opacity: 1;
+    opacity: 0.8;
   }
 }
 
+@keyframes delayedShow {
+  to {
+    visibility: visible;
+  }
+}
