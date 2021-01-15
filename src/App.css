@@ -5,6 +5,7 @@
 @media (prefers-reduced-motion: no-preference) {
   .Daemr-bg {
     filter: blur(8px);
+    opacity: 0.8;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -33,21 +34,79 @@
 
 .Typewriter-cs {
   width: 25ch;
-  animation: 0s linear 4s forwards delayedShow, typing 3.5s steps(25), blink .5s step-end infinite alternate;
-  animation-delay: 4s;
+  animation:
+          0s linear 3.5s forwards delayedShow,
+          typing 1.5s steps(25);
+  animation-delay: 3.5s;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 1px solid;
   font-family: monospace;
   font-size: 1em;
   visibility: hidden;
-
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   text-align: center;
+}
+
+.Typewriter-dt {
+  width: 23ch;
+  animation:
+          0s linear 5s forwards delayedShow,
+          typing 1.5s steps(23);
+  animation-delay: 5s;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 1em;
+  visibility: hidden;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+
+.Typewriter-pa {
+  width: 16ch;
+  animation:
+          0s linear 6.5s forwards delayedShow,
+          typing 1s steps(16);
+  animation-delay:6.5s;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 1em;
+  visibility: hidden;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+}
+
+.Mailaddress {
+  border-bottom: solid 1px;
+  border-color: floralwhite;
+  animation: 0s linear 7s forwards delayedShow, fadein ease 2s;
+  animation-delay: 7s;
+  height: 60px;
+  color: black;
+  visibility: hidden;
+  white-space: nowrap;
+  font-family: monospace;
+  font-size: 1em;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  text-align: center;
+  text-decoration: none;
 }
 
 @keyframes typing {
@@ -58,7 +117,7 @@
 
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
 
@@ -71,12 +130,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
-}
-
-
-
-.App-link {
-  color: darkgreen;
 }
 
 @keyframes fadein {

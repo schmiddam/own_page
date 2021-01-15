@@ -13,7 +13,15 @@ function App() {
                 </h3>
                 <a className="Typewriter-cs">
                     Computer Science Student.
-
+                </a>
+                <a className="Typewriter-dt">
+                    Digital Troubleshooter.
+                </a>
+                <a className="Typewriter-pa">
+                    Process Acrobat.
+                </a>
+                <a className="Mailaddress" href="mailto:schmid.damaris@bluewin.ch?Subject=Hi%20Damaris"
+                   target="_top">Say hello!
                 </a>
             </header>
         </div>
