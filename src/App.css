@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 60vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Daemr {
+    animation: fadein ease 5s;
+  }
+}
+
+.Typewriter{
+  color: plum;
+  overflow: hidden;
+  border-right: .15em solid plum; /* The typwriter cursor */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation:
+          typing 10s steps(40, end),
+          blink-caret .75s step-end infinite;
+}
+
+.App-header {
+  background-color: #900C3F;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: plum;
+}
+
+
+.App-link {
+  color: hotpink;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from { width: 0}
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: plum;
+  }
+}
