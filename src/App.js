@@ -1,4 +1,5 @@
 import pic from './pic.jpg';
+import linkedin from './linkedin.svg'
 import './App.css';
 // import anime from "animejs";
 // import Letterize from "letterizejs";
@@ -21,7 +22,10 @@ function App() {
                     Process Acrobat.
                 </a>
                 <a className="Mailaddress" href="mailto:schmid.damaris@bluewin.ch?Subject=Hi%20Damaris"
-                   target="_top">Say hello!
+                   target="_top">Say hi!
+                </a>
+                <a href="https://www.linkedin.com/in/damaris-schmid/">
+                    <img src={linkedin} className="Linkedin" alt="Linkedin"/>
                 </a>
             </header>
         </div>

@@ -5,12 +5,12 @@
 @media (prefers-reduced-motion: no-preference) {
   .Daemr-bg {
     filter: blur(8px);
-    opacity: 0.8;
+    opacity: 0.5;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     animation: fadein ease 5s;
-    max-width: 40%;
+    max-width: 30%;
     height: auto;
   }
 }
@@ -94,14 +94,15 @@
   border-color: floralwhite;
   animation: 0s linear 7s forwards delayedShow, fadein ease 2s;
   animation-delay: 7s;
-  height: 60px;
+  height: 50px;
   color: black;
   visibility: hidden;
   white-space: nowrap;
   font-family: monospace;
+  font-weight: bold;
   font-size: 1em;
   position: absolute;
-  top: 60%;
+  top: 53%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 99;
@@ -118,6 +119,20 @@
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .Linkedin {
+    height: 40px;
+    width: 40px;
+    z-index: 99;
+    visibility: hidden;
+    animation: 0s linear 7s forwards delayedShow, fadein ease 2s;
+    animation-delay: 7s;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -137,7 +152,7 @@
     opacity: 0;
   }
   100% {
-    opacity: 0.8;
+    opacity: 0.5;
   }
 }
 
