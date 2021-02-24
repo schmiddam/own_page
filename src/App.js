@@ -1,5 +1,7 @@
 import pic from './pic.jpg';
 import linkedin from './linkedin.svg'
+import docker from './docker.svg';
+
 import './App.css';
 // import anime from "animejs";
 // import Letterize from "letterizejs";
@@ -28,6 +30,12 @@ function App() {
                     <img src={linkedin} className="Linkedin" alt="Linkedin"/>
                 </a>
             </header>
+        <footer>
+            Built with docker container
+            <a href="https://hub.docker.com/r/daemr/my-app">
+                <img src={docker} className="Docker" alt="Docker"/>
+            </a>
+        </footer>
         </div>
     );
 }
